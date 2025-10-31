@@ -13,7 +13,7 @@ This first line is called the **class header**.
 
 **Example:**
 
-<!--
+```
 # account.py
 """Account class definition."""
 from decimal import Decimal
@@ -21,8 +21,7 @@ from decimal import Decimal
 class Account:
     """Account class for maintaining a bank account balance."""
     pass
--->
-
+```
 - The **docstring** immediately after the class header describes what the class does.  
 - You can view a class docstring in IPython:  
 <!-- Account?  # shows the class and its docstring -->
@@ -37,7 +36,7 @@ class Account:
 
 **Example `__init__` method:**
 
-<!--
+```
 def __init__(self, name, balance):
     """Initialize an Account object."""
     
@@ -48,7 +47,7 @@ def __init__(self, name, balance):
     # Assign attributes dynamically
     self.name = name
     self.balance = balance
--->
+```
 
 - `self.name` and `self.balance` are **object attributes** that are created when the object is instantiated.  
 - Attributes are **added dynamically**, so an object does not have them until you assign them using `self.attribute_name = value`.  
@@ -70,7 +69,7 @@ def __init__(self, name, balance):
 
 **Example: Deposit method**
 
-<!--
+```
 def deposit(self, amount):
     """Deposit money to the account."""
     
@@ -80,7 +79,7 @@ def deposit(self, amount):
     
     # Update the balance
     self.balance += amount
--->
+```
 
 - This method adds a positive amount to the account balance.  
 - If a negative amount is passed, it raises an exception.
@@ -91,7 +90,7 @@ def deposit(self, amount):
 
 **Full `Account` class example:**
 
-<!--
+```
 from decimal import Decimal
 
 class Account:
@@ -109,7 +108,7 @@ class Account:
         if amount < Decimal('0.00'):
             raise ValueError('Amount must be positive.')
         self.balance += amount
--->
+```
 
 **Key points to remember:**
 
