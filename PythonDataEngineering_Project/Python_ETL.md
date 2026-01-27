@@ -4,36 +4,34 @@
 
 In a shell of your IDE, run the following to download the zip file containing data in multiple formats:
 
-# wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0221EN-SkillsNetwork/labs/module%206/Lab%20-%20Extract%20Transform%20Load/data/source.zip
+-  wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0221EN-SkillsNetwork/labs/module%206/Lab%20-%20Extract%20Transform%20Load/data/source.zip
 
 ## 2. Unzip the File
 
-# unzip source.zip
+-  unzip source.zip
 <img width="848" height="873" alt="image" src="https://github.com/user-attachments/assets/0de82212-15da-4df6-9c6a-8a31655cbe5a" />
 
 ## 3. Parse Information from Files
 
-1. Install Pandas library:
+   - a.	Install Pandas library 
+  -  b.	Import glob, pnadas, elementTree and datetime libraries 
+- c.	Use xml library to parse information from the xml file: 
+- d.	use pandas library to read .csv and .json file formats 
+- i.	python3.11 -m pip install pandas
+- e.	Use glob library to access the file info to call the correct function for the data extraction. 
+- f.	Use datetime package to get the date and time information at the time of logging and log it.
 
-# python3.11 -m pip install pandas
-
-2. Import required libraries:
-
-# import glob
-# import pandas as pd
-# import xml.etree.ElementTree as ET
-# from datetime import datetime
-
-3. Parsing different file types:
-   - Use `xml.etree.ElementTree` to parse `.xml` files
-   - Use `pandas` to read `.csv` and `.json` files
-   - Use `glob` to access file info and call the correct extraction function
-   - Use `datetime` to get current date/time for logging
+```
+import glob 
+import pandas as pd 
+import xml.etree.ElementTree as ET 
+from datetime import datetime
+```
 
 ## 4. Set File Paths
 
-# log_file = "log_file.txt"
-# target_file = "transformed_data.csv"
+- log_file = "log_file.txt"
+- target_file = "transformed_data.csv"
 
 ## 5. Develop Extraction Functions
 
@@ -73,3 +71,4 @@ In a shell of your IDE, run the following to download the zip file containing da
 ## 12. Log File Result
 
 - All log messages will be stored in `log_file.txt`.
+<img width="720" height="745" alt="image" src="https://github.com/user-attachments/assets/c11f6464-a930-44f4-aa9a-6d0d08844587" />
