@@ -3,6 +3,15 @@
 **SQLite3** is a *serverless, zero-configuration* database engine.  
 Unlike traditional databases (like MySQL or PostgreSQL), it **does not require a separate server** — the entire database is stored as a **single file** on your disk.
 
+## Key Differences at a Glance: SQLite vs MySQL / PostgreSQL
+
+| Feature | SQLite | MySQL / PostgreSQL |
+|--------|--------|---------------------|
+| **Architecture** | Serverless — the database is just a file on your hard drive | Client-Server — runs as a separate background service |
+| **Setup** | Zero configuration — just point to a file and go | Requires installation, users, permissions, and port configuration |
+| **Performance** | Extremely fast for local reads/writes | Optimized for high concurrency (many users at once) |
+| **Portability** | Very high — you can email the DB file like a PDF | Low — requires export/import via database dumps |
+
 ---
 
 ## 1. Establishing a Connection
