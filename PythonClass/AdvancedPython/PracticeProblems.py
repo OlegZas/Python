@@ -1,4 +1,4 @@
-# Identifying and removing the duplicates from the list in place 
+#1. # Identifying and removing the duplicates from the list in place 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         mine = []  
